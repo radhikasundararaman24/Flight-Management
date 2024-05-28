@@ -30,9 +30,9 @@ First, do this tutorial to set up your development system for these tutorials. Y
 After your system is ready, these tutorials show you how to perform common tasks.
 
 - Add a new reservation
-- Retrieve all reservations by passenger
+- Show all reservations by a passenger
 - Change seat of a passenger
-- Delete a reservation
+- Delete a reservation by ID
 - Update trip type for a reservation
 
 # API Reference resources
