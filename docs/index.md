@@ -6,7 +6,7 @@ Ready to take flight with our API? Follow these simple steps to get started.
 
 # Overview
 
-- Graphic
+- [Graphic](overview.md)
 - Introduction
 - Key features
 - Contact
