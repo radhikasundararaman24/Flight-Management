@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Flight Management API service
 
 Looking for a centralized hub to manage all your flight reservations seamlessly? Look no further! Introducing our Flight Management REST API service — your ultimate solution! With our service, you gain the power to effortlessly track, modify, and update your reservations whenever you need.
@@ -26,6 +30,7 @@ Explore how to do the common tasks using this API.
 First, do this tutorial to set up your development system for these tutorials. You only have to do this one time per development system.
 
 - Before you start
+- [Developer interactions](tutorials/usecase.md)
 
 After your system is ready, these tutorials show you how to perform common tasks.
 
@@ -37,11 +42,11 @@ After your system is ready, these tutorials show you how to perform common tasks
 
 # API Reference resources
 
-- Passengers resource
-- Flights resource
-- Reservation resource
-- Glance the endpoints, URLs, and methods
-- Error handling
+- [Passengers resource](reference/passengers.md)
+- [Flights resource](reference/flights.md)
+- [Reservation resource](reference/reservation.md)
+- [Glance the endpoints, URLs, and methods](reference/endpoints.md)
+- [Error handling](reference/error-handling.md)
 
 
 
