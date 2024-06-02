@@ -39,6 +39,7 @@
   ],
   "passengers": [
     {
+      "email": "doejoe@abc.com",
       "id": "P001",
       "firstName": "John",
       "lastName": "Doe",
@@ -74,7 +75,9 @@
   "reservations": [
     {
       "id": "B1001",
-      "flightId": ["FL123"],
+      "flightId": [
+        "FL123"
+      ],
       "passengerId": "P001",
       "seatNumber": "12A",
       "reservationStatus": "Confirmed",
@@ -82,7 +85,9 @@
     },
     {
       "id": "B1002",
-      "flightId": ["FL124"],
+      "flightId": [
+        "FL124"
+      ],
       "passengerId": "P001",
       "seatNumber": "18B",
       "reservationStatus": "Confirmed",
@@ -90,27 +95,33 @@
     },
     {
       "id": "B1003",
-      "flightId": ["FL125"],
+      "flightId": [
+        "FL125"
+      ],
       "passengerId": "P002",
       "seatNumber": "22C",
       "reservationStatus": "Confirmed",
-      "purpose": "vacation"
-    },
-    {
-      "id": "B1004",
-      "flightId": ["FL126"],
-      "passengerId": "P003",
-      "seatNumber": "7D",
-      "reservationStatus": "Cancelled",
       "purpose": "business"
     },
     {
       "id": "B1005",
-      "flightId": ["FL126"],
+      "flightId": [
+        "FL126"
+      ],
       "passengerId": "P004",
       "seatNumber": "10A",
       "reservationStatus": "Confirmed",
       "purpose": "personal"
+    },
+    {
+      "id": "B1004",
+      "flightId": [
+        "FL126"
+      ],
+      "passengerId": "P003",
+      "seatNumber": "7D",
+      "reservationStatus": "Cancelled",
+      "purpose": "business"
     }
   ]
 }
