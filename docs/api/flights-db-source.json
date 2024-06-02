@@ -1,0 +1,116 @@
+{
+  "flights": [
+    {
+      "id": "FL123",
+      "flightNumber": "AI123",
+      "airline": "Airways International",
+      "origin": "JFK",
+      "destination": "LAX",
+      "departureTime": "2024-05-25T08:00:00Z",
+      "arrivalTime": "2024-05-25T11:00:00Z"
+    },
+    {
+      "id": "FL124",
+      "flightNumber": "SA456",
+      "airline": "SkyHigh Airlines",
+      "origin": "LAX",
+      "destination": "ORD",
+      "departureTime": "2024-05-26T09:00:00Z",
+      "arrivalTime": "2024-05-26T13:00:00Z"
+    },
+    {
+      "id": "FL125",
+      "flightNumber": "GA789",
+      "airline": "Global Air",
+      "origin": "ORD",
+      "destination": "MIA",
+      "departureTime": "2024-06-01T14:30:00Z",
+      "arrivalTime": "2024-06-01T18:00:00Z"
+    },
+    {
+      "id": "FL126",
+      "flightNumber": "OA321",
+      "airline": "Oceanic Airlines",
+      "origin": "MIA",
+      "destination": "JFK",
+      "departureTime": "2024-06-02T12:00:00Z",
+      "arrivalTime": "2024-06-02T15:00:00Z"
+    }
+  ],
+  "passengers": [
+    {
+      "id": "P001",
+      "firstName": "John",
+      "lastName": "Doe",
+      "dob": "1985-10-10",
+      "passportNumber": "A12345678",
+      "nationality": "USA"
+    },
+    {
+      "id": "P002",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "dob": "1990-03-25",
+      "passportNumber": "B87654321",
+      "nationality": "Canada"
+    },
+    {
+      "id": "P003",
+      "firstName": "Carlos",
+      "lastName": "Garcia",
+      "dob": "1982-07-14",
+      "passportNumber": "C23456789",
+      "nationality": "Mexico"
+    },
+    {
+      "id": "P004",
+      "firstName": "Liu",
+      "lastName": "Wei",
+      "dob": "1978-12-01",
+      "passportNumber": "D98765432",
+      "nationality": "China"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "B1001",
+      "flightId": ["FL123"],
+      "passengerId": "P001",
+      "seatNumber": "12A",
+      "reservationStatus": "Confirmed",
+      "purpose": "personal"
+    },
+    {
+      "id": "B1002",
+      "flightId": ["FL124"],
+      "passengerId": "P001",
+      "seatNumber": "18B",
+      "reservationStatus": "Confirmed",
+      "purpose": "business"
+    },
+    {
+      "id": "B1003",
+      "flightId": ["FL125"],
+      "passengerId": "P002",
+      "seatNumber": "22C",
+      "reservationStatus": "Confirmed",
+      "purpose": "vacation"
+    },
+    {
+      "id": "B1004",
+      "flightId": ["FL126"],
+      "passengerId": "P003",
+      "seatNumber": "7D",
+      "reservationStatus": "Cancelled",
+      "purpose": "business"
+    },
+    {
+      "id": "B1005",
+      "flightId": ["FL126"],
+      "passengerId": "P004",
+      "seatNumber": "10A",
+      "reservationStatus": "Confirmed",
+      "purpose": "personal"
+    }
+  ]
+}
