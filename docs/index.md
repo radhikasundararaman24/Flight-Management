@@ -17,11 +17,8 @@ Ready to take flight with our API? Follow these simple steps to get started.
 
 # Get started
 
-- Before you start
-- Required software
-- Install and set up development system
-- Test the development system
-- Make your first test API call 
+- [Before you start](before-you-start-a-tutorial.md)
+- [Set up the Base URL and environment variables](set-up-env-postman.md)
 
 # Tutorials
 
@@ -29,7 +26,6 @@ Explore how to do the common tasks using this API.
 
 First, do this tutorial to set up your development system for these tutorials. You only have to do this one time per development system.
 
-- Before you start
 - [Developer interactions](tutorials/usecase.md)
 
 After your system is ready, these tutorials show you how to perform common tasks.
