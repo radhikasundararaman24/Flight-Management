@@ -17,8 +17,8 @@ Ready to take flight with our API? Follow these simple steps to get started.
 
 # Get started
 
-- [Before you start](before-you-start-a-tutorial.md)
-- [Set up the Base URL and environment variables](set-up-env-postman.md)
+- [Before you start](tutorials/before-you-start-a-tutorial.md)
+- [Set up the Base URL and environment variables](tutorials/set-up-env-postman.md)
 
 # Tutorials
 
