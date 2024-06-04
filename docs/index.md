@@ -71,7 +71,7 @@ First, do this tutorial to set up your development system for these tutorials. Y
 After your system is ready, these tutorials show you how to perform common tasks.
 
 - Add a new reservation
-- Show all reservations by a passenger
+- [Show all reservations](tutorials/show-all-res.md)
 - Change seat of a passenger
 - Delete a reservation by ID
 - Update trip type for a reservation
