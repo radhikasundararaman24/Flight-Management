@@ -1,23 +1,7 @@
-# Set up base URL and environment variables in Postman
+# Set up base URL in Postman
 
 
-## Step 1: Open Postman
-
-Launch the Postman application on your computer.
-
-## Step 2: Create a New Collection
-
-If you don't have an existing collection, you can create a new one by clicking on the **New** button in the top-left corner of the Postman interface and selecting "Collection".
-
-## Step 3: Create a New Request
-
-Inside the collection you just created, click on the **Add Request** button to create a new request.
-
-## Step 4: Add requests
-
-Repeat step 3 for as many requests you want to create and save all the requests within the collection.
-
-## Step 4: Set Up Base URL Variable
+## Step 1: Set Up Base URL Variable
 
 1. In the request pane, click on the **Params** tab.
 1. Click on **Add Param** button.
@@ -26,7 +10,7 @@ Repeat step 3 for as many requests you want to create and save all the requests 
 1. Enter the base URL for your API, e.g., ```http://localhost:3000```.
 1. Click **Save**.  
 
-## Step 5: Use Base URL Variable in Requests
+## Step 2: Use Base URL Variable in Requests
 
 Now, whenever you create a new request within this collection, you can use the ```baseURL``` variable as part of your URL. For example, if you want to make a request to ```http://localhost:3000/passengers```, you can simply use ```{{baseURL}}/passengers``` as your request URL.
 
@@ -41,7 +25,7 @@ If you want to use different ```base URLs``` for different environments (e.g., d
 1. Click **Add** to save the environment.
 
 
-## Step 7: Switch Environments
+## Step 3: Switch Environments
 
 You can switch between environments using the dropdown menu in the top-right corner of the Postman interface. When you switch to a different environment, Postman will automatically use the corresponding base URL variable for your requests.
 

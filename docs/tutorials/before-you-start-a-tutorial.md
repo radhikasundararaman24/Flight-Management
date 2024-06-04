@@ -20,11 +20,11 @@ For information about how to prepare MacOS for the tutorials, visit the [MacOS i
 * A development system (PC, Mac, or Linux) running a current or
 long-term support (LTS version of the operating system).
 * The following software on your development system:
-    * [Git](https://docs.github.com/en/get-started/quickstart/set-up-git) (for the command line)
-    * [GitHub Desktop](https://desktop.github.com) (optional)
-    * A fork of the [Flight-Management-service repo](https://github.com/radhikasundararaman24/flight-management-service)
-    * A current/LTS version of [node.js](https://nodejs.org/en/)
-    * A current version of [json-server](https://www.npmjs.com/package/json-server)
+    * (Optional) [Git](https://docs.github.com/en/get-started/quickstart/set-up-git) (for the command line).
+    * [GitHub Desktop](https://desktop.github.com).
+    * A fork of the [Flight-Management-service repo](https://github.com/radhikasundararaman24/flight-management-service).
+    * A current/LTS version of [node.js](https://nodejs.org/en/).
+    * A current version of [json-server](https://www.npmjs.com/package/json-server).
     * A current copy of the database file. You can get this by syncing your fork.
     * **TIP**: If you're using a fork of the repo, create a working branch in which to do your tutorials. Create a new branch for each tutorial to prevent a mistake in one from affecting your work in another.
     * The [Postman desktop app](https://www.postman.com/downloads/). Because you run the **Flight-Management service** on your development system with an `http://localhost` hostname, the web-version of Postman can't perform the exercises.
@@ -33,7 +33,7 @@ long-term support (LTS version of the operating system).
 
 To test your development system, follow these steps:
 
-1. Create and checkout a test branch of your fork of the To-Do-service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `to-do-service` repo.
+1. Create and checkout a test branch of your fork of the Flight Management service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `flight-management-service` repo.
 
     ```shell
     cd <your GitHub repo workspace>
@@ -42,7 +42,7 @@ To test your development system, follow these steps:
     cd flight-management-service
     git checkout -b tutorial-test
     cd api
-    json-server -w to-do-db-source.json
+    json-server -w flights-db-source.json
     ```
 
     If your development system is installed correctly, you should see
@@ -87,3 +87,8 @@ Some common situations that cause errors include:
 
 If you see the list of passengers from the service, you're ready to do
 the tutorials.
+
+## Next steps:
+
+1. [Create or import Postman collection](create-postman-collection.md)
+1. [Set up base URL in Postman](set-up-env-postman.md)
