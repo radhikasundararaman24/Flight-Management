@@ -7,13 +7,11 @@ layout: page
 The following table shows the list of operations offered by this service:
 
 
-| Method      | Operation  | Sample URL   |
-|---|---|---|
-| GET  | Retrieve all flights.  | ``` {{baseUrl}}/flights ``` |
-| GET  | Retrieve all reservations.  | ``` {{baseUrl}}/reservations ``` |
-| GET  | Retrieve all passengers.  | ``` {{baseUrl}}/passengers ``` |
-| PATCH  | Modify the existing passenger record by ID. | ``` {{baseUrl}}/passengers/P001 ```   |
-| PUT  | Update email for the existing passenger by ID. | ``` {{baseUrl}}/passengers/P001 ```   |
-| DELETE  | Delete an existing reservation by ID.  | ``` {{baseUrl}}/reservations/B1004 ```   |
+| HTTP Method | Operation  | 
+|---|---|
+| GET  | [Retrieve all reservations](../reference/reservations-get-all-reservations.md). |
+| GET  | [Retrieve all passengers](../reference/passengers-get-all-passengers.md). |
+| PATCH  | [Modify the existing reservation record by ID](../reference/reservations-update-by-id.md). |
+| DELETE  | [Delete reservation by id](../reference/reservation-delete-reservation-by-id). | 
 
 

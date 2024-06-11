@@ -45,8 +45,6 @@ The `passengers` resource supports these operations.
 ### READ (GET)
 
 * [Get all passengers](passengers-get-all-passengers.md)
-* [Get all passengers by ID](passengers-get-passenger-by-id.md)
-* [Get all passengers by name](passengers-get-passenger-by-name.md)
 
 
 ### CREATE (POST)
@@ -56,7 +54,6 @@ The `passengers` resource supports these operations.
 ### UPDATE (PUT/PATCH)
 
 * [Update email by passenger ID](passengers-update-by-id.md)
-
 
 ### DELETE
 

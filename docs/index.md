@@ -78,6 +78,8 @@ After your system is ready, these tutorials show you how to perform common tasks
 
 # API Reference resources
 
+The API reference documentation offers comprehensive details about these resources:
+
 - [Passengers resource](reference/passengers.md)
 - [Flights resource](reference/flights.md)
 - [Reservation resource](reference/reservation.md)

@@ -70,6 +70,15 @@
       "dob": "1978-12-01",
       "passportNumber": "D98765432",
       "nationality": "China"
+    },
+    {
+      "id": "H4e1",
+      "passengerId": "P0026",
+      "firstName": "Ruba",
+      "lastName": "Yuk",
+      "dob": "1995-02-10",
+      "passportNumber": "B129340238",
+      "nationality": "Italy"
     }
   ],
   "reservations": [
@@ -118,10 +127,8 @@
       "flightId": [
         "FL126"
       ],
-      "passengerId": "P003",
-      "seatNumber": "7D",
-      "reservationStatus": "Cancelled",
-      "purpose": "business"
+      "passengerId": "P0031",
+      "seatNumber": "10D"
     }
   ]
 }
