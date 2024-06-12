@@ -7,7 +7,7 @@ layout: page
 The following table shows the list of operations offered by this service:
 
 
-| HTTP Method | Operation  | 
+| Method | Operation  | 
 |---|---|
 | GET  | [Retrieve all reservations](reference/reservations-get-all-reservations.md). |
 | GET  | [Retrieve all passengers](reference/passengers-get-all-passengers.md). |

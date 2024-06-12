@@ -11,38 +11,107 @@ related to flights, passengers, and their reservations.
 
 ![image_flight-mgmt.svg](image_flight-mgmt.svg)
 
-## Key benefits
+## API Security
 
-- **Flight Management**: Access detailed information about flights,
-including flight ID, airline, origin, destination, departure time,
-including and arrival time. Users can retrieve essential
-including flight details to track schedules effectively.
+The API uses Basic Auth authentication which validates the following
+information in the HTTP Authorization header: 
+- username 
+- password  
 
-- **Passenger Management**: Obtain passenger details such as passenger ID,
-first name, last name, date of birth (DOB), passport number, and
-first nationality. This feature enables users to maintain a
-first database of passengers and their personal information securely.
+The credentials are encoded in Base64Links to an external site. 
+For more resources on Basic Auth, visit: [security in Swagger](https://swagger.io/docs/specification/2-0/authentication/basic-authentication/).
 
-- **Reservation Handling**: Manage flight reservations
-effortlessly by accessing reservation details,
-effortlessly including reservation ID, flight ID, passenger ID,
-effortlessly seat number, reservation status, and purpose.
-effortlessly Users can update reservation statuses and track
-effortlessly passenger bookings efficiently.
+## Quick start
 
-## In essence
+Here’s a "Hello World" example to demonstrate how the Flight Management API service works.
 
-The Flight Management API service simplifies the process of
-managing flights, passengers, and reservations, providing users
-with a centralized platform to access essential travel-related data.
-Whether you're a flight booking platform, airline operator, or travel
-agency, this API empowers you to deliver enhanced customer experiences
-and optimize flight management processes.
+**Scenario**
 
-## Contact us
+Let's say you want to retrieve a list of all flights using the Flight Management API.
 
-For any questions and feedback or to learn more about our API service:
+### Steps
 
-- visit [www.flightmgmt.com](www.flightmgmt.com),
-- write to us flywithus@flightmgmt.com,
-- call our international toll free number @ 1800-297-6383.
+1. Set up the environment: Ensure you have access to the API endpoint and the necessary API key for authentication.
+1. Create or import a Postman collection: If you're using Postman, you can create a new collection or import one that contains predefined API requests.
+1. Set up the Base URL.
+1. Make your first API call: Use the API endpoint from the collection to retrieve a list of flights.
+
+**Sample request:** 
+
+``` curl
+curl http://localhost:3000/reservations
+```
+
+**Sample response:**
+
+```json
+[
+  {
+    "id": "B1001",
+    "flightId": [
+      "FL123"
+    ],
+    "passengerId": "P001",
+    "seatNumber": "12A",
+    "reservationStatus": "Confirmed",
+    "purpose": "personal"
+  },
+  {
+    "id": "B1002",
+    "flightId": [
+      "FL124"
+    ],
+    "passengerId": "P001",
+    "seatNumber": "18B",
+    "reservationStatus": "Confirmed",
+    "purpose": "business"
+  },
+  {
+    "id": "B1003",
+    "flightId": [
+      "FL125"
+    ],
+    "passengerId": "P002",
+    "seatNumber": "22C",
+    "reservationStatus": "Confirmed",
+    "purpose": "business"
+  },
+  {
+    "id": "B1005",
+    "flightId": [
+      "FL126"
+    ],
+    "passengerId": "P004",
+    "seatNumber": "10A",
+    "reservationStatus": "Confirmed",
+    "purpose": "personal"
+  },
+  {
+    "id": "B1004",
+    "flightId": [
+      "FL126"
+    ],
+    "passengerId": "P0031",
+    "seatNumber": "10D"
+  }
+]
+```
+
+## Supported endpoints
+
+The following table shows the list of operations offered by this service:
+
+
+| Method | Operation  | 
+|---|---|
+| GET  | [Retrieve all reservations](reference/reservations-get-all-reservations.md). |
+| GET  | [Retrieve all passengers](reference/passengers-get-all-passengers.md). |
+| PATCH  | [Modify the existing reservation record by ID](reference/reservations-update-by-id.md). |
+| DELETE  | [Delete reservation by id](reference/reservation-delete-reservation-by-id). | 
+
+
+## Related information
+
+- [Quick start](tutorials/before-you-start-a-tutorial.md)
+- [Supported endpoints](reference/endpoints.md)
+

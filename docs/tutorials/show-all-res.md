@@ -10,21 +10,17 @@ layout: page
 ## Prerequisites
 
 1. The ```json-server``` is up and running.
-1. You have installed Postman Desktop. 
-1. The Postman request collection setup is complete. 
+1. You have installed the Postman Desktop application. 
 
+If you need help with the prerequisites, refer to the [before-you-start-a-tutorial](before-you-start-a-tutorial.md) section.
 
 ## About this task
 
-To show all reservations by ID:
-
+To show all reservations:
 
 1. Open Postman. 
-1. In **Workspaces** > click **Import**.
-1. Browse to the path containing the import collection and select the import file you want to test. For example: *flight-mgmt-API.postman_collection*.
-1. From the top right corner, select the appropriate environment from the drop-down list. If you haven't set the environment, see [set up base URL](set-up-env-postman).
-1. From the left pane, expand the imported API  collection.
-1. Select the **GET** all reservations request.
+1. Select the **GET** method.
+1. Enter ```{{baseUrl}}/reservations```.
 1. Click **Send**.
 
 Here's a sample of all reservations:
@@ -83,5 +79,14 @@ Here's a sample of all reservations:
     }
 ]
 ```
+
+## Related information
+
+- [Error handling](../reference/error-handling.md)
+
+## Next step
+
+- [Update reservation](update-reservation.md)
+
 
 
