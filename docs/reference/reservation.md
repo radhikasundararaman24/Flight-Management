@@ -14,7 +14,7 @@ Contains information about the users of the service.
 
 To have a task in the service, the user must be added to the service first.
 
-## Resource properties
+## Reservation properties
 
 Sample `reservations` resource
 
@@ -33,12 +33,12 @@ Sample `reservations` resource
 
 | Property name | Type | Description |
 | ------------- | ----------- | ----------- |
-| `id` | string | Unique identifier of the reservation. |
-| `flightId` | string | Unique identifier of the flight. |
-| `passengerId` | string | The passenger's Id. |
-| `seatNumber` | string | The passenger's seat information. |
-| `reservationStatus` | string | The status of the booking. |
-| `purpose` | string | Type of travel. |
+| `id` | string | (**Required**) Unique identifier of the reservation. |
+| `flightId` | string | (**Required**) Unique identifier of the flight. |
+| `passengerId` | string | (**Required**) The passenger's Id. |
+| `seatNumber` | string | (**Required**) The passenger's seat information. |
+| `reservationStatus` | string | (**Optional**) The status of the booking. |
+| `purpose` | string | (**Optional**) Type of travel. |
 
 ## Operations
 
