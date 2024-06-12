@@ -32,57 +32,101 @@ long-term support (LTS version of the operating system).
 
 To test your development system, follow these steps:
 
+1. Check your json-server version.
+
+    ```shell
+    C:\>json-server --version
+    ```
+    This will display the installed json-server version.
+
+    ```shell
+    1.0.0-alpha.23
+    ```
+1. Check your Node.js version.
+    ```shell
+    C:\>node -v
+    v20.13.0
+    
+    OR
+
+    C:\>node --version
+    v20.13.0
+    ```
+    This will display the installed Node.js version.
+    
+    ```shell
+    v20.13.0
+    ```
+
 1. Create and checkout a test branch of your fork of the Flight Management service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `flight-management-service` repo.
 
     ```shell
     cd <your GitHub repo workspace>
-    ls
     # (see the flight-management-service directory in the list)
     cd flight-management-service
-    git checkout -b tutorial-test
     cd api
-    json-server -w flights-db-source.json
+    cd start-server.bat
     ```
-
-    If your development system is installed correctly, you should see
-    the service start and display the URL of the service: `http://localhost:3000`.
-
-2. Make a test call to the service.
+     If your development system is installed correctly, you should see
+        the service start and display the URL of the service: `http://localhost:3000`.
+          
+    ```shell
+    C:\flight-management-service\api>json-server -w flights-db-source.json
+    
+    --watch/-w can be omitted, JSON Server 1+ watches for file changes by default
+    JSON Server started on PORT :3000
+    Press CTRL-C to stop
+    Watching flights-db-source.json...
+    
+    ( ˶ˆ ᗜ ˆ˵ )
+    
+    Index:
+    http://localhost:3000/
+    
+    Static files:
+    Serving ./public directory if it exists
+    
+    Endpoints:
+    http://localhost:3000/flights
+    http://localhost:3000/passengers
+    http://localhost:3000/reservations
+    ```
+1. Make a test call to the service.
 
     ```shell
     curl http://localhost:3000/passengers
     ```
 
-3. If the service is running correctly, you should see a list of users from the service, such as in this example.
+1. If the service is running correctly, you should see a list of users from the service, such as in this example.
 
-```json
-  {
-    "email": "doejoe@abc.com",
-    "id": "P001",
-    "firstName": "John",
-    "lastName": "Doe",
-    "dob": "1985-10-10",
-    "passportNumber": "A12345678",
-    "nationality": "USA"
-  },
-  {
-    "id": "P002",
-    "firstName": "Jane",
-    "lastName": "Smith",
-    "dob": "1990-03-25",
-    "passportNumber": "B87654321",
-    "nationality": "Canada"
-  }
-```
+    ```json
+      {
+        "email": "doejoe@abc.com",
+        "id": "P001",
+        "firstName": "John",
+        "lastName": "Doe",
+        "dob": "1985-10-10",
+        "passportNumber": "A12345678",
+        "nationality": "USA"
+      },
+      {
+        "id": "P002",
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "dob": "1990-03-25",
+        "passportNumber": "B87654321",
+        "nationality": "Canada"
+      }
+    ```
 
 If you don't see the list of passengers, or receive an error in any step
 of the procedure, investigate and correct the error before continuing.
 Some common situations that cause errors include:
 
-1. You mistyped a command.
-2. You aren't in the correct directory.
-3. A required software component didn't install correctly.
-4. A required software component isn't up to date.
+- You mistyped a command.
+- You aren't in the correct directory.
+- A required software component didn't install correctly.
+- A required software component isn't up to date.
 
 If you see the list of passengers from the service, you're ready to do
 the tutorials.
