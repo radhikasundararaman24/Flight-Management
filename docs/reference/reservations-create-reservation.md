@@ -11,13 +11,13 @@ POST
 ```
 
 Creates a new [`reservation`](reservation.md) for a passenger.
-The request body contains the new reservation details. 
+The request body contains the new reservation details.
 
 ## URL
 
 ```shell
 
-{{server_url}/reservations
+{base_url}/reservations
 
 ```
 
@@ -27,18 +27,16 @@ No headers required.
 
 ## Request body
 
-You must specify the required properties for the new reservation.  In the request body, specify a JSON representation of the [`reservation`](reservations.md) object. 
-The following table lists the properties that are required when you create a reservation. 
+You must specify the required properties for the new reservation.  In the request body, specify a JSON representation of the [`reservation`](reservations.md) object.
+The following table lists the properties that are required when you create a reservation.
 
 | Property | Description | Type |
 | -------------- | ------ | ------------ |
 | passengerId | (**Required**) The unique identifier of the passenger to whom the reservation is assigned.| integer |
 | seatNumber| (**Required**) Seat number | string |
-| reservationStatus |(**Optional**) Indicates the status of your booking.| string | Required |  |
+| reservationStatus |(**Optional**) Indicates the status of your booking.| string |
 | purpose | (**Optional**) The due date of the task. | string |
 |  flightId | (**Required**) Indicates the flight number. | string |
-
-
 
 ## Sample request
 

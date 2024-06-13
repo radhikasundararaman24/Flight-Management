@@ -10,8 +10,8 @@ Gets a list of all reservations.
 
 ## URL
 
-```
-{{baseUrl}}/reservations
+``` shell
+{baseUrl}/reservations
 ```
 
 
