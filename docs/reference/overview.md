@@ -9,8 +9,6 @@ for managing flights, passengers, and reservations efficiently.
 With this API, users can seamlessly access and manipulate data
 related to flights, passengers, and their reservations.
 
-![image_flight-mgmt.svg](image_flight-mgmt.svg)
-
 ## Technical Specifications for trying this service 
 
 In a nutshell, the Flight Management API needs the following components to operate:

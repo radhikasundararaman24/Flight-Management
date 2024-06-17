@@ -10,7 +10,7 @@ Ready to take flight with our API? Glance through the following information to g
 
 # Overview 
 
-- [All about the Flight Management API service](overview.md) - at a glance
+- [About](overview.md) - The Flight Management API at a glance
 - [Technical specifications](overview.md) - components needed to operate our API.
 - [Quick start](overview.md) - jump start your journey with our API.
 - [Usecases](real-world-situations.md) - shows real-world situations where you can apply this API. 
