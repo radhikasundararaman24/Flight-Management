@@ -1,6 +1,7 @@
 # Get all passengers
 
 ## URL
+
 ```
 {{baseUrl}}/passengers
 ```
