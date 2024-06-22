@@ -1,31 +1,37 @@
----
-layout: page
----
+# Get all reservations
 
-# Show all reservations
+## Method
 
- This resource retrieves all the reservations in the source. 
+```
+GET
+```
 
-## Prerequisites
+Gets a list of all reservations.
 
-1. The ```json-server``` is up and running.
-1. You have installed the Postman Desktop application. 
+## URL
 
-If you need help with the prerequisites, refer to the [before-you-start-a-tutorial](../quick-start/before-you-start-a-tutorial.md) section.
+```
+{{baseUrl}}/reservations
+```
 
-## About this task
 
-To show all reservations:
+## Params
 
-1. Open Postman. 
-1. Select the **GET** method.
-1. Enter ```{{baseUrl}}/reservations```.
-1. Click **Send**.
+None
 
-Here's a sample of all reservations:
+## Request headers
 
-```js
+None
+
+## Request body
+
+None
+
+## Sample Response
+
+``` json
 [
+ [
     {
         "id": "B1001",
         "flightId": [
@@ -76,16 +82,14 @@ Here's a sample of all reservations:
         "reservationStatus": "Cancelled",
         "purpose": "business"
     }
+]  
 ]
 ```
 
-## Related information
+## Return status
 
-- [Error handling](../reference/error-handling.md)
-
-## Next step
-
-- [Update reservation](update-reservation.md)
-
-
-
+| Status value | Return status | Description |
+| ------------- | ----------- | ----------- |
+| 200 | Success | Requested data returned successfully |
+| 404 | Error | Specified record not found |
+| ECONNREFUSED | N/A | Service is offline. Start the service and try again. |

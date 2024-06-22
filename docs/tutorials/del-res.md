@@ -4,22 +4,22 @@ layout: page
 
 # Delete reservation by ID
 
- This resource updates a reservation at a time. 
+ This resource updates a reservation at a time.
 
 ## Prerequisites
 
 1. The ```json-server``` is up and running.
-1. You have installed the Postman Desktop application. 
+1. You have installed the Postman Desktop application.
 
-If you need help with the prerequisites, refer to the [before-you-start-a-tutorial](before-you-start-a-tutorial.md) section.
+If you need help with the prerequisites, refer to the [before-you-start-a-tutorial](../quick-start/before-you-start-a-tutorial.md) section.
 
 ## About this task
 
-To update an existing [reservation](../reference/reservation.md) follow these steps: 
+To update an existing [reservation](../reference/resource/reservation.md) follow these steps:
 
 1. Open Postman.
-1. Select **DELETE** method. 
-1. Enter ```{{baseUrl}}/reservations/id```. Specify the ID of 
+1. Select **DELETE** method.
+1. Enter ```{{baseUrl}}/reservations/id```. Specify the ID of
 the existing reservation that you want to delete: ```{{baseUrl}}/reservations/df6e```
 1. Click **Send**.
 
@@ -34,5 +34,3 @@ the existing reservation that you want to delete: ```{{baseUrl}}/reservations/df
 ## Related information
 
 - [Error handling](../reference/error-handling.md)
-
-
