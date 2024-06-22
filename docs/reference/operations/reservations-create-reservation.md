@@ -17,7 +17,7 @@ The request body contains the new reservation details.
 
 ```shell
 
-{{server_url}/reservations
+{{baseURL}}/reservations
 
 ```
 
