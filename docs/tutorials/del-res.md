@@ -4,7 +4,7 @@ layout: page
 
 # Delete reservation by ID
 
- This resource updates a reservation at a time.
+ This API deletes one reservation at a time.
 
 ## Prerequisites
 
@@ -19,8 +19,8 @@ To update an existing [reservation](../reference/resource/reservation.md) follow
 
 1. Open Postman.
 1. Select **DELETE** method.
-1. Enter ```{{baseUrl}}/reservations/id```. Specify the ID of
-the existing reservation that you want to delete: ```{{baseUrl}}/reservations/df6e```
+1. Enter ```{base_url}/reservations/id```.
+1. Specify the ID of the existing reservation that you want to delete, for example: ```{baseUrl}/reservations/df6e```.
 1. Click **Send**.
 
 ## Return status

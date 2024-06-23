@@ -7,7 +7,7 @@ layout: page
 Base endpoint:
 
 ```shell
-{local_url}/flights
+{base_url}/flights
 ```
 
 Contains information about the flights of the service.

@@ -4,7 +4,7 @@ layout: page
 
 # Add a new reservation
 
- This resource retrieves all the reservations in the source.
+ This API retrieves all the reservations stored in the Flight Management database source.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ To add a new [reservation](../reference/resource/reservation.md) follow these st
 
 1. Open Postman.
 1. Select **POST** method.
-1. Enter ```{{baseUrl}}/reservations```.
+1. Enter ```{baseUrl}/reservations```.
 1. In the Body tab, create the following properties for a new reservation and submit your request:
 
 | Property name | Type | Description |
