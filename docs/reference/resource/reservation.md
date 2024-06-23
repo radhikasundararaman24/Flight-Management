@@ -7,7 +7,7 @@ layout: page
 Base endpoint:
 
 ```shell
-{local_url}/reservations
+{base_url}/reservations
 ```
 
 Contains information about the users of the service.

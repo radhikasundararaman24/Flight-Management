@@ -4,7 +4,7 @@ layout: page
 
 # Update reservation by ID
 
- This resource updates a reservation at a time.
+ This API updates one reservation at a time.
 
 ## Prerequisites
 
@@ -19,8 +19,8 @@ To update an existing [reservation](../reference/resource/reservation.md) follow
 
 1. Open Postman.
 1. Select **PATCH** method.
-1. Enter ```{{baseUrl}}/reservations/id```. Specify the ID for which you want to update
-the existing properties: ```{{baseUrl}}/reservations/df6e```
+1. Enter ```{baseUrl}/reservations/id```.
+1. Specify the ID for which you want to update the existing properties, for example: ```{baseUrl}/reservations/df6e```.
 1. In the **Body** tab, create ONLY the properties you want to modify for that
 reservation and submit your request.
 

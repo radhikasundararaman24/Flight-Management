@@ -4,12 +4,12 @@ layout: page
 
 # Show all reservations
 
- This resource retrieves all the reservations in the source. 
+ This API retrieves all the reservations stored in the Flight Management database source.
 
 ## Prerequisites
 
 1. The ```json-server``` is up and running.
-1. You have installed the Postman Desktop application. 
+1. You have installed the Postman Desktop application.
 
 If you need help with the prerequisites, refer to the [before-you-start-a-tutorial](../quick-start/before-you-start-a-tutorial.md) section.
 
@@ -17,9 +17,9 @@ If you need help with the prerequisites, refer to the [before-you-start-a-tutori
 
 To show all reservations:
 
-1. Open Postman. 
+1. Open Postman.
 1. Select the **GET** method.
-1. Enter ```{{baseUrl}}/reservations```.
+1. Enter ```{baseUrl}/reservations```.
 1. Click **Send**.
 
 Here's a sample of all reservations:
